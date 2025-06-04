@@ -1,12 +1,12 @@
 #!/bin/bash
 
-#Listing the variables
+#Listing the variables, defining the log files
 
 LOG_FILES[1]="heart_rate.log"
 LOG_FILES[2]="temperature.log"
 LOG_FILES[3]="water_usage.log"
 
-# First creating the menu
+# First creating the menu to display
 echo "Select log to archive"
 echo "1) Heart Rate "
 echo "2) Temperature "
@@ -16,13 +16,14 @@ read -p "Enter choice (1-3): " user_choice
 
 arch_dir="archived_logs"
 
+#Creating the the timestamp
+timestamp=$(date "+%Y-%m-%d_%H:%M:%S")
+
 #Check if the archived_logs directory exists
 if [[ ! -d "$arch_dir" ]]; then
         mkdir "$arch_dir"
 fi
 
-#Creating the the timestamp
-timestamp=$(date "+%Y-%m-%d_%H:%M:%S")
 
 case $user_choice in
     1)
