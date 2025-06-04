@@ -1,0 +1,2 @@
+active_logs*./log
+active_logs/*.log
