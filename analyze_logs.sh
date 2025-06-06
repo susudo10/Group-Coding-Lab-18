@@ -1,7 +1,7 @@
 #!/bin/bash
 
 LOG_DIR="hospital_data/active_logs"
-REPORT_FILE="reports/analysis_report.txt"
+REPORT_FILE="hospital_data/reports/analysis_report.txt"
 
 mkdir -p reports
 
