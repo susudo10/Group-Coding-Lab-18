@@ -3,8 +3,6 @@
 LOG_DIR="hospital_data/active_logs"
 REPORT_FILE="hospital_data/reports/analysis_report.txt"
 
-mkdir -p reports
-
 echo "Select log file to analyze:"
 echo "1) Heart Rate (heart_rate_log.log)"
 echo "2) Temperature (temperature_log.log)"
