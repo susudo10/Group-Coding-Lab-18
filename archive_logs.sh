@@ -14,7 +14,6 @@ echo "3) Water Usage "
 echo ""
 read -p "Enter choice (1-3): " user_choice
 
-arch_dir="archived_logs"
 
 #Creating the the timestamp
 timestamp=$(date "+%Y-%m-%d_%H:%M:%S")
