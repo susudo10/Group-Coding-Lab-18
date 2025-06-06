@@ -2,9 +2,9 @@
 
 #Listing the variables, defining the log files
 
-LOG_FILES[1]="heart_rate.log"
-LOG_FILES[2]="temperature.log"
-LOG_FILES[3]="water_usage.log"
+LOG_FILES[1]="heart_rate_log.log"
+LOG_FILES[2]="temperature_log.log"
+LOG_FILES[3]="water_usage_log.log"
 
 # First creating the menu to display
 echo "Select log to archive"
@@ -27,7 +27,7 @@ fi
 
 case $user_choice in
     1)
-        file_dir="heart_data_archive"
+        file_dir="hospital_data/archived_logs/heart_data_archive"
         echo "Archiving heart rate log ..."
         log_file="${LOG_FILES[1]}"
         active_log_path="hospital_data/active_logs/$log_file"
@@ -49,7 +49,7 @@ case $user_choice in
         ;;
 
     2)
-        file_dir="temperature_data_archive"
+        file_dir="hospital_data/archived_logs/temperature_data_archive"
         echo "Archiving temperature log ..."
         log_file="${LOG_FILES[2]}"
         active_log_path="hospital_data/active_logs/$log_file"
@@ -71,7 +71,7 @@ case $user_choice in
         ;;
 
     3)
-        file_dir="water_usage_data_archive"
+        file_dir="hospital_data/archived_logs/water_usage_data_archive"
         echo "Archiving water usage log..."
         log_file="${LOG_FILES[3]}"
         active_log_path="hospital_data/active_logs/$log_file"
